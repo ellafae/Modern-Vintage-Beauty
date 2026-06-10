@@ -1,0 +1,135 @@
+/* =====================
+   REGISTRO
+===================== */
+
+.registro-section {
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.75),
+            rgba(0,0,0,.75)
+        ),
+        url('../assets/headermamaylogoalaizq.jpeg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    padding: 80px 0;
+}
+
+.registro-card {
+
+    background: rgba(15,15,15,.95);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 0 35px rgba(255,79,216,.15);
+}
+
+.registro-card h2 {
+
+    color: #ff4fd8;
+
+    font-weight: 700;
+}
+
+.registro-card p {
+
+    color: #bdbdbd;
+}
+
+.registro-icon {
+
+    font-size: 3rem;
+
+    color: #ff4fd8;
+
+    margin-bottom: 15px;
+}
+
+.registro-card label {
+
+    color: white;
+
+    font-weight: 500;
+}
+
+.form-control {
+
+    background: #111;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    color: white;
+
+    height: 48px;
+}
+
+.form-control:focus {
+
+    background: #111;
+
+    color: white;
+
+    border-color: #ff4fd8;
+
+    box-shadow: 0 0 10px rgba(255,79,216,.35);
+}
+
+.btn-registro-form {
+
+    background: linear-gradient(
+        45deg,
+        #ff4fd8,
+        #ffc5c5
+    );
+
+    color: white;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 12px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.btn-registro-form:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 20px rgba(255,79,216,.35);
+
+    color: white;
+}
+
+@media(max-width:768px){
+
+    .registro-card{
+
+        padding:25px;
+    }
+
+    .registro-section{
+
+        padding:40px 15px;
+    }
+
+    .registro-card h2{
+
+        font-size:2rem;
+    }
+
+}

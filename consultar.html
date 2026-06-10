@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./consultar.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Consultar Cliente</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html"><img src="./assets/logoconfondo.png" alt="Logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <div class="botones-nav">
+
+                <a href="./login.html" class="btn btn-login">
+                    <i class="fa-regular fa-user"></i>
+                    Iniciar Sesión
+                </a>
+                <a href="./registro.html" class="btn btn-registro">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Registro
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONSULTAR CLIENTE -->
+
+    <section class="consulta-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-6 col-md-8">
+
+                    <div class="consulta-card">
+
+                        <div class="text-center mb-4">
+
+                            <i class="fa-solid fa-magnifying-glass consulta-icon"></i>
+
+                            <h2>Consultar Cliente</h2>
+
+                            <p>
+                                Busca un cliente registrado mediante su número de identificación.
+                            </p>
+
+                        </div>
+
+                        <form>
+
+                            <div class="form-group">
+
+                                <label>Número de Identificación</label>
+
+                                <input type="text" class="form-control" id="buscarIdentificacion"
+                                    placeholder="Ingrese la identificación">
+
+                            </div>
+
+                            <button type="button" class="btn btn-consultar btn-block" onclick="buscarCliente()">
+
+                                <i class="fa-solid fa-search"></i>
+
+                                Buscar Cliente
+
+                            </button>
+
+                        </form>
+
+                        <div id="resultadoBusqueda" class="resultado-cliente mt-4">
+
+                            <div>
+
+                                <i class="fa-solid fa-user"></i>
+
+                                La información del cliente aparecerá aquí.
+
+                            </div>
+
+                        </div>
+
+                        <div class="text-center mt-4">
+
+                            <small class="text-muted">
+
+                                Modern Vintage Beauty © 2026
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="py-4">
+
+        <div class="container text-center">
+
+            <h5>Modern Vintage Beauty by Kmelissa</h5>
+
+            <p>
+                Transformando estilos desde los años 2000.
+            </p>
+
+            <p class="mb-0">
+                © 2026 Todos los derechos reservados
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+    <script src="./consultar.js"></script>
+</body>
+
+</html>

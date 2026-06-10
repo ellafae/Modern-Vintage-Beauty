@@ -1,0 +1,172 @@
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto-section {
+
+    background: #000;
+
+    color: white;
+}
+
+.contact-card {
+
+    background: #111;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    height: 100%;
+}
+
+.contact-card h3 {
+
+    color: #ff4fd8;
+
+    margin-bottom: 25px;
+}
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+.contact-item i {
+
+    color: #ff4fd8;
+
+    font-size: 1.3rem;
+
+    width: 35px;
+}
+
+/* FORMULARIO */
+
+.contact-card .form-control {
+
+    background: #000;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    color: white;
+}
+
+.contact-card .form-control:focus {
+
+    background: #000;
+
+    color: white;
+
+    border-color: #ff4fd8;
+
+    box-shadow: 0 0 10px rgba(255,79,216,.3);
+}
+
+.btn-contacto {
+
+    background: linear-gradient(
+        45deg,
+        #ff4fd8,
+        #ffc5c5
+    );
+
+    color: white;
+
+    border: none;
+
+    border-radius: 30px;
+
+    padding: 12px 25px;
+
+    font-weight: bold;
+}
+
+/* =========================
+   REDES
+========================= */
+
+.redes-section {
+
+    background: linear-gradient(
+        90deg,
+        #070707,
+        #111111,
+        #070707
+    );
+}
+
+.social-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.social-btn {
+
+    width: 70px;
+
+    height: 70px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #111;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    color: #ff4fd8;
+
+    font-size: 1.8rem;
+
+    transition: .3s;
+}
+
+.social-btn:hover {
+
+    color: white;
+
+    background: #ff4fd8;
+
+    text-decoration: none;
+
+    transform: translateY(-5px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .contact-card{
+
+        margin-bottom:20px;
+    }
+
+    .social-btn{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:1.5rem;
+    }
+
+}

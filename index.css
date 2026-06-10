@@ -1,0 +1,447 @@
+
+ .hero {
+
+     position: relative;
+
+     min-height: 100vh;
+
+     background-image: url('../assets/headermamaylogoalaizq.jpeg');
+
+     background-size: cover;
+
+     background-color: #000;
+
+     background-position: center;
+
+     background-repeat: no-repeat;
+
+     display: flex;
+
+     align-items: center;
+ }
+
+ .overlay {
+
+     position: absolute;
+
+     top: 0;
+     left: 0;
+
+     width: 100%;
+     height: 100%;
+
+     background: rgba(0, 0, 0, 0.55);
+ }
+
+ .hero-content {
+
+     position: relative;
+
+     z-index: 2;
+ }
+
+ .hero h1 {
+
+     color: white;
+
+     font-size: 4rem;
+
+     font-weight: 800;
+ }
+
+ .hero span {
+
+     color: #ff4fd8;
+ }
+
+ .hero p {
+     color: white;
+     font-size: 1.25rem;
+ }
+
+ a.btn.btn-principal {
+     background: linear-gradient(45deg, #f362f3bf, #ffc5c5e6);
+     border-color: #f362f3bf;
+     border-radius: 19px;
+     color: #fffefe;
+ }
+
+ a.btn.btn-secundario {
+     background: transparent;
+     border-color: fuchsia;
+     color: fuchsia;
+     border-radius: 19px;
+ }
+
+ .servicio-card {
+     height: 100%;
+ }
+
+ .servicio-card img {
+     height: 300px;
+     object-fit: cover;
+ }
+
+ .card-body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+
+ .card {
+
+     background: #000000;
+
+     color: white;
+
+     border: 1px solid rgba(255, 255, 255, .08);
+
+     border-radius: 15px;
+ }
+
+ footer.py-4 {
+     background: linear-gradient(45deg, #610061, #a2b7bce3);
+ }
+
+ .h5,
+ h5 {
+     font-size: 1.25rem;
+     color: #ff4fd8;
+ }
+
+ /* BENEFICIOS */
+
+ .beneficios {
+
+     background: linear-gradient(90deg,
+             #070707,
+             #111111,
+             #070707);
+
+     padding: 25px 0;
+
+     border-top: 1px solid rgba(255, 255, 255, .05);
+
+     border-bottom: 1px solid rgba(255, 255, 255, .05);
+ }
+
+ .beneficio-item {
+
+     color: white;
+
+     padding: 15px;
+
+     position: relative;
+ }
+
+ .beneficio-item:not(:last-child)::after {
+
+     content: "";
+
+     position: absolute;
+
+     right: 0;
+
+     top: 50%;
+
+     transform: translateY(-50%);
+
+     width: 1px;
+
+     height: 50px;
+
+     background: rgba(255, 255, 255, .15);
+ }
+
+ .beneficio-item i {
+
+     font-size: 2rem;
+
+     color: #ff4fd8;
+
+     margin-bottom: 12px;
+
+     display: block;
+
+     transition: .3s;
+ }
+
+ .beneficio-item:hover i {
+
+     transform: scale(1.15);
+
+     color: #ff7de8;
+ }
+
+ .beneficio-item h6 {
+
+     margin: 0;
+
+     color: white;
+
+     font-size: .95rem;
+
+     font-weight: 500;
+
+     line-height: 1.4;
+ }
+
+
+ /* =========================
+   TABLETS
+========================= */
+
+ @media (max-width: 992px) {
+
+     .hero {
+
+         text-align: center;
+
+         min-height: 80vh;
+
+         background-position: 70% center;
+     }
+
+     .hero h1 {
+
+         font-size: 3rem;
+     }
+
+     .hero p {
+
+         font-size: 1.1rem;
+     }
+
+     .hero-buttons {
+
+         display: flex;
+
+         justify-content: center;
+
+         flex-wrap: wrap;
+
+         gap: 10px;
+     }
+
+     .botones-nav {
+
+         margin-top: 15px;
+     }
+
+     .servicio-card img {
+
+         height: 250px;
+     }
+
+ }
+
+
+ /* =========================
+   CELULARES
+========================= */
+
+ @media (max-width: 768px) {
+
+     /* NAVBAR */
+
+     .navbar-brand img.logo {
+
+         width: 55px;
+     }
+
+     .navbar-nav {
+
+         text-align: center;
+     }
+
+     .botones-nav {
+
+         display: flex;
+
+         flex-direction: column;
+
+         gap: 10px;
+
+         margin-top: 15px;
+     }
+
+     .btn-login,
+     .btn-registro {
+
+         width: 100%;
+     }
+
+     /* HERO */
+
+     .hero {
+
+         min-height: 90vh;
+
+         background-position: 72% center;
+
+         text-align: center;
+     }
+
+     .hero h1 {
+
+         font-size: 2.4rem;
+
+         line-height: 1.2;
+     }
+
+     .hero p {
+
+         font-size: 1rem;
+
+         margin-bottom: 25px;
+     }
+
+     .hero-buttons {
+
+         display: flex;
+
+         flex-direction: column;
+
+         gap: 12px;
+     }
+
+     .hero-buttons .btn {
+
+         width: 100%;
+     }
+
+     /* BENEFICIOS */
+
+     .beneficio-item {
+
+         padding: 20px 10px;
+     }
+
+     .beneficio-item i {
+
+         font-size: 1.8rem;
+     }
+
+     .beneficio-item h6 {
+
+         font-size: .9rem;
+     }
+
+     /* SERVICIOS */
+
+     .section-title {
+
+         font-size: 2rem;
+     }
+
+     .servicio-card img {
+
+         height: 220px;
+     }
+
+     .card-text {
+
+         font-size: .95rem;
+     }
+
+     /* TESTIMONIOS */
+
+     .card {
+
+         margin-bottom: 20px;
+     }
+
+     /* FOOTER */
+
+     footer {
+
+         text-align: center;
+     }
+
+ }
+
+
+ /* =========================
+   CELULARES PEQUEÑOS
+========================= */
+
+ @media (max-width: 576px) {
+
+     .hero {
+
+         min-height: 100vh;
+     }
+
+     .hero h1 {
+
+         font-size: 2rem;
+     }
+
+     .hero p {
+
+         font-size: .95rem;
+     }
+
+     .section-title {
+
+         font-size: 1.8rem;
+     }
+
+     .servicio-card img {
+
+         height: 200px;
+     }
+
+     .beneficio-item {
+
+         padding: 15px 5px;
+     }
+
+     .beneficio-item h6 {
+
+         font-size: .8rem;
+     }
+
+ }
+
+
+ /* =========================
+   EFECTOS PREMIUM
+========================= */
+
+ .card {
+
+     transition: .3s ease;
+ }
+
+ .card:hover {
+
+     transform: translateY(-6px);
+
+     border-color: rgba(255, 79, 216, .5);
+
+     box-shadow: 0 0 25px rgba(255, 79, 216, .15);
+ }
+
+ .btn-principal,
+ .btn-secundario,
+ .btn-login,
+ .btn-registro {
+
+     transition: .3s;
+ }
+
+ .btn-principal:hover,
+ .btn-registro:hover {
+
+     transform: translateY(-2px);
+
+     box-shadow: 0 0 20px rgba(255, 79, 216, .35);
+ }
+
+ .btn-secundario:hover,
+ .btn-login:hover {
+
+     background: rgba(255, 79, 216, .1);
+ }

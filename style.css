@@ -1,0 +1,56 @@
+/* <!-- NAVBAR --> */
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #000;
+     color: white;
+ }
+
+ img.logo {
+     width: 70px;
+     border-radius: 30px;
+ }
+
+ .bg-dark {
+     background-color: #000000 !important;
+ }
+
+ a.btn.btn-login {
+     background: transparent;
+     border-color: fuchsia;
+     color: fuchsia;
+     border-radius: 19px;
+ }
+
+ a.btn.btn-registro {
+     background: linear-gradient(45deg, #f362f3bf, #ffc5c5e6);
+     border-color: #f362f3bf;
+     border-radius: 19px;
+     color: #fffefe;
+ }
+
+ .navbar-dark .navbar-nav .nav-link {
+     color: white;
+     transition: 0.3s;
+ }
+
+ .navbar-dark .navbar-nav .nav-link:hover {
+     color: #ff4fd8;
+ }
+
+ .navbar-dark .navbar-nav .active>.nav-link {
+     color: #ff4fd8;
+     font-weight: bold;
+ }
+ /* NAVBAR END */
+
+ /* FOOTER */
+ footer.py-4 {
+     background: linear-gradient(45deg, #610061, #a2b7bce3);
+ }
+
+ .h5,
+ h5 {
+     font-size: 1.25rem;
+     color: #ff4fd8;
+ }
+ /* FOOTER END */

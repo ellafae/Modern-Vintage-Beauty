@@ -1,0 +1,180 @@
+/* ==========================
+   CONSULTAR CLIENTE
+========================== */
+
+.consulta-section {
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.75),
+            rgba(0,0,0,.75)
+        ),
+        url('../assets/headermamaylogoalaizq.jpeg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    padding: 80px 0;
+}
+
+.consulta-card {
+
+    background: rgba(15,15,15,.95);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 0 35px rgba(255,79,216,.15);
+}
+
+.consulta-icon {
+
+    font-size: 3rem;
+
+    color: #ff4fd8;
+
+    margin-bottom: 15px;
+}
+
+.consulta-card h2 {
+
+    color: #ff4fd8;
+
+    font-weight: 700;
+}
+
+.consulta-card p {
+
+    color: #bdbdbd;
+}
+
+.consulta-card label {
+
+    color: white;
+
+    font-weight: 500;
+}
+
+.consulta-card .form-control {
+
+    background: #111;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    color: white;
+
+    height: 48px;
+}
+
+.consulta-card .form-control:focus {
+
+    background: #111;
+
+    color: white;
+
+    border-color: #ff4fd8;
+
+    box-shadow: 0 0 10px rgba(255,79,216,.35);
+}
+
+.btn-consultar {
+
+    background: transparent;
+
+    border: 2px solid #ff4fd8;
+
+    color: #ff4fd8;
+
+    border-radius: 30px;
+
+    padding: 12px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.btn-consultar:hover {
+
+    background: #ff4fd8;
+
+    color: white;
+
+    box-shadow: 0 0 20px rgba(255,79,216,.35);
+}
+
+.resultado-cliente {
+
+    min-height: 120px;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: left;
+
+    overflow-wrap: break-word;
+}
+
+.resultado-cliente i {
+
+    color: #ff4fd8;
+
+    margin-right: 8px;
+}
+
+.resultado-cliente h4 {
+
+    color: #ff4fd8;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.resultado-cliente p {
+
+    margin-bottom: 10px;
+
+    font-size: 1rem;
+}
+
+.resultado-cliente strong {
+
+    color: #ff4fd8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .consulta-card{
+
+        padding:25px;
+    }
+
+    .consulta-section{
+
+        padding:40px 15px;
+    }
+
+    .consulta-card h2{
+
+        font-size:2rem;
+    }
+
+}
