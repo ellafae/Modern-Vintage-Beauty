@@ -1,6 +1,4 @@
-/* ==========================
-   CONSULTAR CLIENTE
-========================== */
+/* CONSULTAR CLIENTE */
 
 .consulta-section {
 
@@ -158,7 +156,7 @@
     color: #ff4fd8;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVIDAD */
 
 @media(max-width:768px){
 

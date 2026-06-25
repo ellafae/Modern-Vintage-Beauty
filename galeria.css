@@ -1,0 +1,255 @@
+body {
+    background: #000;
+    color: white;
+}
+
+/* HERO */
+
+.galeria-hero {
+
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../assets/headermamaylogoalaizq.jpeg');
+    background-size: cover;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.galeria-hero h1 {
+
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.galeria-hero span {
+
+    color: #ff4fd8;
+}
+
+.galeria-hero p {
+
+    font-size: 1.2rem;
+}
+
+/* EDITORIAL */
+
+.galeria-editorial {
+
+    background: #f7f1ee;
+    color: #2b2b2b;
+}
+
+.editorial-texto {
+
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+
+}
+
+.editorial-texto h2 {
+
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.video-presentacion {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 9 / 16;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(255, 79, 216, .15);
+    display: block;
+    margin: 0 auto;
+}
+
+/* SERVICIOS */
+
+.servicios-galeria {
+
+    padding: 80px 0;
+    background: #111;
+}
+
+.servicio-box {
+
+    text-align: center;
+    padding: 30px;
+}
+
+.servicio-box i {
+
+    font-size: 3rem;
+    color: #ff4fd8;
+    margin-bottom: 20px;
+}
+
+/* GALERIA */
+
+.galeria-grid {
+
+    padding: 80px 0;
+}
+
+.galeria-img {
+
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.galeria-img:hover {
+
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(255, 79, 216, .3);
+}
+
+/* ANTES Y DESPUES */
+
+.antes-despues {
+
+    padding: 80px 0;
+    background: #111;
+}
+
+.comparacion {
+
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.comparacion h4 {
+
+    color: #ff4fd8;
+    margin-bottom: 20px;
+}
+
+/* IMAGENES ANTES Y DESPUES */
+
+.comparacion img {
+    width: 100%;
+    max-width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    transition: .3s ease;
+}
+
+.comparacion img:hover {
+    transform: scale(1.02);
+}
+
+/* RESERVAR */
+
+.reservar-galeria {
+
+    padding: 100px 0;
+    background:
+        linear-gradient(45deg,
+            #4f003d,
+            #1a1a1a);
+}
+
+.reservar-galeria h2 {
+
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btn-principal {
+
+    background: linear-gradient(45deg,
+            #ff4fd8,
+            #ffc5c5);
+
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 35px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all .35s ease;
+    animation: brilloSuave 3s infinite;
+}
+
+.btn-principal:hover {
+
+    color: white;
+    transform: translateY(-4px);
+    box-shadow:
+        0 8px 25px rgba(255, 79, 216, .35),
+        0 0 20px rgba(255, 79, 216, .25);
+}
+
+@keyframes brilloSuave {
+
+    0% {
+
+        box-shadow:
+            0 0 0 rgba(255, 79, 216, 0);
+    }
+
+    50% {
+
+        box-shadow:
+            0 0 18px rgba(255, 79, 216, .25);
+    }
+
+    100% {
+
+        box-shadow:
+            0 0 0 rgba(255, 79, 216, 0);
+    }
+
+}
+
+/* RESPONSIVIDAD */
+
+@media(max-width:768px) {
+
+    .galeria-hero h1 {
+
+        font-size: 2.5rem;
+    }
+
+    .editorial-texto {
+
+        padding: 30px;
+    }
+
+    .editorial-texto h2 {
+
+        font-size: 2rem;
+    }
+
+    .galeria-img {
+
+        height: 300px;
+    }
+
+    .reservar-galeria h2 {
+
+        font-size: 2rem;
+    }
+
+    .video-presentacion {
+
+        min-height: 300px;
+    }
+
+}
